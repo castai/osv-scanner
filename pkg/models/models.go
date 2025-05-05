@@ -5,6 +5,8 @@ import (
 	"github.com/google/osv-scanner/v2/internal/imodels"
 )
 
-func FromInventory(inventory *extractor.Package) PackageInfo {
+type ModelsPackageInfo = imodels.PackageInfo
+
+func FromInventory(inventory *extractor.Package) ModelsPackageInfo {
 	return imodels.FromInventory(inventory)
 }
